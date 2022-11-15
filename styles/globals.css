@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Titillium+Web:ital,wght@0,300;0,400;1,200;1,400&display=swap');
+
+@layer components {
+    body{
+        /* font-family: 'Titillium Web', sans-serif; */
+        /* font-family: 'Poppins', sans-serif; */
+        @apply dark:bg-gray-800 dark:text-white
+    }
+    .text-gray-primary{
+        @apply text-gray-800
+    }
+    .bg-primary{
+        @apply bg-cyan-500
+    }
+    .container{
+        @apply px-2 md:px-4 xl:px-8
+    }
+    .bg-dark{
+        @apply bg-gray-800
+    }
+    
+}
