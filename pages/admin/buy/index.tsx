@@ -14,7 +14,7 @@ import { motion as m } from "framer-motion";
 import { getBuys } from "../../../api_service/admin/buy/index";
 import { setBuy, getBuyData } from "../../../redux/slice/admin/buySlice";
 
-function index(): ReactElement {
+function Index(): ReactElement {
   const dispatch = useDispatch();
   const [params, setParams] = useState({});
   const [filter, setFilter] = useState(false);
@@ -93,4 +93,4 @@ function index(): ReactElement {
   );
 }
 
-export default index;
+export default Index;

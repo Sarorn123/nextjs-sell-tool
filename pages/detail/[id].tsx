@@ -110,8 +110,8 @@ function Detail({}: Props) {
                   {singleProduct?.recommend?.length === 0 && (
                     <p className="text-gray-500 text-sm dark:text-white">Empty Recommend</p>
                   )}
-                  {singleProduct.recommend.map((product: any) => {
-                    return <Card product={product} />;
+                  {singleProduct.recommend.map((product: any,index: number) => {
+                    return <Card product={product} key={index} />;
                   })}
                 </>
               }

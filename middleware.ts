@@ -9,13 +9,13 @@ export async function middleware(request: NextRequest) {
     const origin = request.nextUrl.origin;
 
     // protect login and signup 
-    // if (access_token && path.startsWith("/auth")) {
-    //   if(role !== "Admin"){
-    //     return NextResponse.redirect(origin);
-    //   }else{
-    //     return NextResponse.redirect(origin+"/admin/dashboard");
-    //   }
-    // }
+    if (access_token && path.startsWith("/auth")) {
+      if(role !== "Admin"){
+        return NextResponse.redirect(origin);
+      }else{
+        return NextResponse.redirect(origin+"/admin/dashboard");
+      }
+    }
 
     // protect admin from no token 
     if (!access_token && path.startsWith('/admin')) {

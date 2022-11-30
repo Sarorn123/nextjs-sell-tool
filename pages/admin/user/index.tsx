@@ -14,7 +14,7 @@ import { motion as m } from "framer-motion";
 import { getAllusers } from "../../../api_service/admin/user";
 import { getUserState, setUsers } from "../../../redux/slice/admin/userSlice";
 
-function index(): ReactElement {
+function Index(): ReactElement {
 
   const dispatch = useDispatch();
   const [filter, setFilter] = useState(false);
@@ -101,4 +101,4 @@ function index(): ReactElement {
   );
 }
 
-export default index;
+export default Index;

@@ -51,9 +51,9 @@ export default function Layout({ children }: props) {
           </div>
           <Setting open={setting} />
           {user && user.role?.name === "Admin" ? (
-            <AdminLayout children={children} />
+            <AdminLayout>{children}</AdminLayout>
           ) : (
-            <UserLayout children={children} />
+            <UserLayout>{children}</UserLayout>
           )}
         </>
       )}

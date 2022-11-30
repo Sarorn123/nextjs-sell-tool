@@ -14,7 +14,7 @@ import dynamic from "next/dynamic";
 const BarChart = dynamic(() => import("./BarChart"), { ssr: false });
 import { motion as m } from "framer-motion";
 
-function index() {
+function Index() {
   const dispatch = useDispatch();
   useEffect(() => {
     clientSideAuth(dispatch);
@@ -142,4 +142,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

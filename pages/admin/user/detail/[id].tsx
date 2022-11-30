@@ -18,7 +18,7 @@ import {
 import NoAvatar from "../../../../images/noAvatar.png";
 import Image from "next/image";
 
-function index({}) {
+function Index({}) {
   const dispatch = useDispatch();
 
   const router = useRouter();
@@ -160,4 +160,4 @@ function index({}) {
   );
 }
 
-export default index;
+export default Index;

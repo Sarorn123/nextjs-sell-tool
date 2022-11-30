@@ -24,7 +24,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
   }
 );
 
-function index({}) {
+function Index({}) {
   const [toggleEdit, setToggleEdit] = useState<boolean>(false);
 
   const handleToggleEdit = () => {
@@ -122,4 +122,4 @@ function index({}) {
   );
 }
 
-export default index;
+export default Index;

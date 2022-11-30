@@ -11,7 +11,7 @@ interface Props {
 
 function AdminLayout({ children }: Props): ReactElement {
   return (
-    <Admin children={children} />
+    <Admin>{children}</Admin>
   );
 }
 

@@ -27,7 +27,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
 
 type Props = {};
 
-const index = (props: Props) => {
+const Index = (props: Props) => {
   const { product } = useAppSelector(getProductState);
  
   return (
@@ -61,4 +61,4 @@ const index = (props: Props) => {
   );
 };
 
-export default index;
+export default Index;

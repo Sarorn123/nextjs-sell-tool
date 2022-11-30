@@ -20,7 +20,7 @@ import {
 } from "../../../redux/slice/admin/productSlice";
 import { getCategory, getProduct } from "../../../api_service/admin/product";
 
-function index(): ReactElement {
+function Index(): ReactElement {
   const [name, setName] = useState("");
   const [categoryId, setCategoryId] = useState("");
   const [params, setParams] = useState({});
@@ -126,4 +126,4 @@ function index(): ReactElement {
   );
 }
 
-export default index;
+export default Index;

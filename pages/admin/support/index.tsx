@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props = {}
 
-const index = (props: Props) => {
+const Index = (props: Props) => {
   return (
     <div className='text-black dark:text-white bg-white dark:bg-gray-800 h-full w-full rounded-lg overflow-auto p-4'>
       <p className='font-bold lg:text-2xl'>Support</p>
@@ -12,4 +12,4 @@ const index = (props: Props) => {
   )
 }
 
-export default index
+export default Index

@@ -3,9 +3,7 @@ import { MdDarkMode } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from 'react';
 import Button from "../../../components/utils/Button";
-import DatePickers from "./DatePicker";
 import moment from 'moment';
-import AutoCompleteInput from "./AutoCompleteUser";
 import AutoCompleteUser from "./AutoCompleteUser";
 import AutoCompleteProduct from "./AutoCompleteProduct";
 
@@ -61,14 +59,6 @@ const Filter = ({ open, setOpen, handleFilterBuy }: Props) => {
 
         <div className="mt-2">
           <AutoCompleteProduct setValue={setProductId} placeholder="Select Product" />
-        </div>
-
-        <div className="mt-2 w-full">
-          <DatePickers setDate={setStartDate} />
-        </div>
-
-        <div className="mt-2 w-full">
-          <DatePickers setDate={setEndDate} />
         </div>
 
         <div className="mt-2">

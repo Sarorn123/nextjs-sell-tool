@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { register } from "../../api_service/auth/index";
 import { useRouter } from "next/router";
 
-export default function Login() {
+export default function SignUp() {
   const router = useRouter();
   const [file, setFile] = useState<File | null>(null);
   const [fullname, setFullname] = useState("");
