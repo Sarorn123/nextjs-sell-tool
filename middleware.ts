@@ -6,7 +6,7 @@ export async function middleware(request: NextRequest) {
     const access_token = request.cookies.get("access_token");
     const role = request.cookies.get("role");
     const path = request.nextUrl.pathname;
-    const origin = request.nextUrl.origin
+    const origin = request.nextUrl.origin;
 
     // protect login and signup 
     // if (access_token && path.startsWith("/auth")) {

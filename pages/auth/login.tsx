@@ -15,8 +15,10 @@ export default function Login() {
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const signin = async () => {
+    setLoading(true);
     const response = await login(email, password);
     if (response?.status === 201) {
       dispatch(setAuth(response.data));
@@ -28,6 +30,7 @@ export default function Login() {
     } else {
       toast.error(response);
     }
+    setLoading(false);
   };
 
   return (
@@ -57,7 +60,11 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <div className="mt-4">
-            <Button text="Login" action={signin} />
+            {loading ? (
+              <Button text="Loading..." action={() => {}} />
+            ) : (
+              <Button text="Login" action={signin} />
+            )}
           </div>
 
           <Link href={"/auth/signup"}>
