@@ -18,7 +18,7 @@ export const login = async (email: string, password: string) => {
         const res = await service.post("/auth/login", { email, password });
         return res;
     } catch (error: any) {
-        return error.response.data.message;
+        return error?.response?.data?.message;
     }
 }
 
@@ -65,7 +65,7 @@ export const editUser = async (id: string, data: any) => {
             }
         });
         return res;
-    } catch (error:any) {
+    } catch (error: any) {
         return error;
     }
 }
